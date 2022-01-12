@@ -1,5 +1,5 @@
 
-fun solution(s:String):Int{
+fun Num_And_String(s:String):Int{
     var answer:Int = 0
 
     var numSet = arrayOf("zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine")
@@ -15,6 +15,6 @@ fun solution(s:String):Int{
 fun main(args:Array<String>){
     val stnum:String = "one4seveneight"
 
-    val result = solution(stnum)
+    val result = Num_And_String(stnum)
     println(result)
 }

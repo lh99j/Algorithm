@@ -1,4 +1,4 @@
-fun solution(absolutes: IntArray, signs: BooleanArray): Int {
+fun boolean_Plus(absolutes: IntArray, signs: BooleanArray): Int {
     var answer: Int = 0
 
     for(i in 0 until absolutes.size){
@@ -19,7 +19,7 @@ fun main(args:Array<String>){
     var absolutes = intArrayOf(4, 7, 12)
     var signs = booleanArrayOf(true, false, true)
 
-    var result = solution(absolutes, signs)
+    var result = boolean_Plus(absolutes, signs)
 
     println(result)
 }
