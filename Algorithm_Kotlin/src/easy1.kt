@@ -1,15 +1,20 @@
 fun main(args:Array<String>){
-    val num = readLine()!!.toInt()
-    var array1 = ArrayList<Int>()
 
-    for(i in 1..num){
-        var sum:Int = 0
+    var array = ArrayList<Int>()
+    while(true){
+        var sum = 0
         var (a, b) = readLine()!!.split(" ").map { it.toInt() }
+
+        if(a == 0 && b == 0){
+            break
+        }
+
         sum = a + b
-        array1.add(sum)
+
+        array.add(sum)
     }
 
-    for(i in 0 until array1.size){
-        println(array1[i])
+    for(i in 0 until array.size){
+        println(array[i])
     }
 }
